@@ -1,6 +1,7 @@
 header {
     background-color: black;
-    ;
+    display: flex;
+    justify-content: space-between;
 }
 
 body {
@@ -10,7 +11,143 @@ body {
     padding: 0;
     cursor: url(../img/pointer.svg), auto;
     height: 1000vh;
+    background-color: rgb(31, 31, 31);
 }
+
+
+/* Nav bar */
+
+.logo {
+    height: 80px;
+    /* adjust as needed */
+    width: auto;
+    /* maintain aspect ratio */
+    padding-left: 45%;
+    padding-top: 18px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 118px;
+    /* or whatever height you've set for your navbar */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* semi-transparent white background */
+    backdrop-filter: blur(10px);
+    /* blur the background */
+    z-index: 1000;
+    /* ensure navbar is above other page elements */
+    /* Add the rest of your navbar styles here */
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 22px;
+    margin: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.hamburger-menu div {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+.hamburger-menu div {
+    width: 55px;
+    height: 5px;
+    background-color: #6A37FC;
+    /* default color */
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 12px;
+}
+
+
+/* Change color when menu is active */
+
+.change .hamburger-menu div {
+    background-color: #f00;
+    /* change color */
+}
+
+
+/* Rotate first bar */
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+
+/* Fade out the second bar */
+
+.change .bar2 {
+    opacity: 0;
+}
+
+
+/* Rotate third bar */
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* Change color when menu is active */
+
+.change .hamburger-menu div {
+    background-color: #6A37FC;
+    /* change color */
+}
+
+#navLinks {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Added alpha to make background semi-transparent */
+    backdrop-filter: blur(50px);
+    /* Blurs the background */
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+#navLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#navLinks a {
+    text-decoration: none;
+    color: #333;
+    font-size: 3rem;
+    transition: color 0.2s;
+    color: rgb(88, 88, 88);
+}
+
+#navLinks a:hover {
+    color: #6A37FC;
+}
+
+.show {
+    left: 0;
+}
+
+
+/* Hero */
 
 .container {
     width: 100%;
@@ -20,6 +157,7 @@ body {
     background-attachment: fixed;
     background-image: url(../img/heroImage.png);
     border: 2px;
+    padding-top: 8%;
 }
 
 .heroText {
@@ -84,4 +222,341 @@ body {
 .button2:hover {
     background-color: #ffffff;
     color: #6A37FC;
+}
+
+
+/* section experience / logos companies */
+
+#experience {
+    padding-top: 4.5%;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* space between logos */
+}
+
+.company-logos img {
+    width: 180px;
+    /* adjust as needed */
+    transition: transform 0.3s ease;
+}
+
+.company-logos img:hover {
+    transform: scale(1.1);
+    /* logo grows when hovered */
+}
+
+
+/* Section about me */
+
+#about-me {
+    padding-top: 3%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    /* adjust as needed */
+}
+
+.about-me-text {
+    /* add styling for your text here */
+    padding-left: 5%;
+    padding-top: 20%;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 20px;
+    color: #dbdada;
+}
+
+
+/* imag skills buttons */
+
+.skills {
+    padding-top: 5%;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    /* space between logos */
+}
+
+.skills img {
+    width: 20%;
+    height: auto;
+}
+
+
+/* about me image purple right  */
+
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+}
+
+
+/* id section */
+
+#process {
+    padding-top: 5%;
+}
+
+
+/* Text Study */
+
+.text-study {
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: 250%;
+}
+
+
+/* Studies logos */
+
+.study-cards {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0px;
+    /* adjust as needed */
+}
+
+.card-st {
+    width: 40%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card-st:hover {
+    transform: scale(1.1);
+    /* card grows when hovered */
+}
+
+.card-st img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* cards process */
+
+.process-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 0px;
+    /* adjust as needed */
+}
+
+.card {
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* card grows when hovered */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Projects cards  */
+
+.title {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 120px;
+}
+
+.project-card {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 80px;
+    margin-top: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: #303030;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    gap: 250px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: #270d46;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-image:hover {
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 90%;
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.project-title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.project-summary {
+    font-size: 16px;
+    text-align: ;
+}
+
+.button3 {
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    background-color: #6A37FC;
+    border: 500px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.button3:hover {
+    background-color: #ffffff;
+    color: #6A37FC;
+}
+
+.desciption-caption {
+    text-align: left;
+    font-size: medium;
+    color: #6A37FC;
+    font-weight: bolder;
+}
+
+
+/* Reach out section / Contact */
+
+#reachOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* adjust as needed */
+    background-image: url(../img/heroImage.png);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/heroImage.png);
+    border: 2px;
+    padding-top: 0%;
+    color: white;
+    font-family: sans-serif;
+}
+
+#reachOut h2,
+#reachOut p,
+#reachOut label {
+    color: #fff;
+}
+
+.form-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="email"],
+.form-container form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-top: 16px;
+}
+
+#message {
+    padding-bottom: 200px;
+}
+
+.form-container form .checkbox-container div {
+    display: flex;
+    align-items: center;
+}
+
+.form-container form input[type="submit"] {
+    width: 50%;
+    background-color: #6A37FC;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+    border-radius: 50px;
+}
+
+.form-container form input[type="submit"]:hover {
+    background-color: #bbb;
+    background-color: #270d46;
+}
+
+.checkbox-container {
+    padding-top: 10%;
 }
