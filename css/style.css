@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     cursor: url(../img/pointer.svg), auto;
-    height: 1000vh;
+    height: 800vh;
     background-color: rgb(31, 31, 31);
 }
 
@@ -24,6 +24,18 @@ body {
     /* maintain aspect ratio */
     padding-left: 45%;
     padding-top: 18px;
+}
+
+.behance-img {
+    padding-left: 5%;
+    width: 50px;
+    height: auto;
+}
+
+.linkedin-img {
+    padding-left: 700px;
+    width: 50px;
+    height: auto;
 }
 
 .navbar {
@@ -396,7 +408,7 @@ p {
 
 .project-card {
     flex: 0 0 calc(50% - 20px);
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     margin-top: 80px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -476,10 +488,137 @@ p {
     font-weight: bolder;
 }
 
+.more-works {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.my-work {
+    text-align: center;
+    color: #ECAC02;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+/* Reviews  */
+
+.title-reviews {
+    padding-top: 1%;
+    color: white;
+    text-align: center;
+}
+
+.title-reviews h2 {
+    font-size: xxx-large;
+}
+
+.title-reviews h3 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.reviews-clients {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    background-image: linear-gradient(180deg, #6A37FC, #270d46, rgb(31, 31, 31));
+}
+
+.testimonial-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonial {
+    min-width: 100%;
+    transition: all 0.5s;
+    align-items: center;
+}
+
+.testimonial-name {
+    padding-left: 45%;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.stars {
+    color: #ECAC02;
+    align-items: center;
+    padding-left: 48%;
+}
+
+.testimonial-1 {
+    padding-left: 42%;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.testimonial-2 {
+    padding-left: 42%;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.testimonial-4 {
+    padding-left: 41%;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.testimonial-role {
+    padding-left: 47%;
+    font-size: medium;
+    font-weight: lighter;
+    color: white;
+}
+
+.testimonial-image {
+    padding-top: 1%;
+    padding-left: 45%;
+    width: 200px;
+    height: auto;
+    border-radius: 0%;
+}
+
+.testimonial-text {
+    font-size: large;
+    color: #ffffff;
+    padding-left: 30%;
+    padding-right: 30%;
+    align-items: center;
+    font-style: italic;
+    font-stretch: expanded;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    /* Hide all testimonials by default */
+    flex-shrink: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
 
 /* Reach out section / Contact */
 
 #reachOut {
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -506,6 +645,8 @@ p {
 
 .form-container {
     padding: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -560,3 +701,78 @@ p {
 .checkbox-container {
     padding-top: 10%;
 }
+
+
+/* footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+}
+
+.footer-logo {
+    max-width: 150px;
+}
+
+.foot-text {
+    padding-right: 00px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+
+.footer-center ul,
+.footer-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-center ul li,
+.footer-right ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-center ul li a,
+.footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right ul li a img {
+    padding-left: 20px;
+    width: 40px;
+    height: auto;
+}
+
+.footer-right {
+    align-items: flex-start;
+    margin-left: 1450px;
+}
+
+.footer-left {}
+
+.foot-h3 {
+    padding-left: 1300px;
+    font-size: 20px;
+}
+
+
+/* Project Sections */
+
+
+/* Travelers */

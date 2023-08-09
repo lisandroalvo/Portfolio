@@ -8,22 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&family=Lato:wght@300&family=Noto+Serif+Lao:wght@600&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 
     <!-- Other head elements -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-    <title>Projects</title>
+    <title> Projects </title>
 </head>
-
 
 <body>
     <header>
 
         <section class="navbar">
-            <img src="../web-2023/img/logo.svg" class="logo">
+            <img src="../img/logo.svg" class="logo">
+
+            <a href="https://www.linkedin.com/in/lisandroalvo/" target="_blank"> <img src="../img/Frame 119.svg" alt="LinkedIn" class="linkedin-img"></a>
+            <a href="https://www.behance.net/lisandroalvo" target="_blank"><img src="../img/Frame 120.svg" alt="Behance" class="behance-img"></a>
+
         </section>
         <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
             <div class="bar1"></div>
@@ -34,7 +44,7 @@
 
         <nav id="navLinks">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
@@ -43,8 +53,9 @@
 
     </header>
     <main>
-        <section id="hero">
+        <section id="hero-travelers">
             <!-- Hero image and intro text here -->
+
         </section>
         <section id="project-details">
             <!-- Project details text and image gallery here -->
@@ -54,9 +65,51 @@
         </section>
     </main>
     <footer>
-        <!-- Footer goes here -->
-    </footer>
-    <script src="scripts.js"></script>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="../web-2023 - copia/img/logo.svg" alt="Your Logo" class="footer-logo">
+                    <p class="foot-text">Lisandro Alvo is a dedicated UX Designer and Innovation Strategist, deeply rooted in the Human-Centered Design approach based in Mexico City, Mexico.</p>
+                </div>
+                <div class="footer-center">
+                    <ul>
+                        <li><a href="link_to_homepage">Home</a></li>
+                        <li><a href="link_to_about">About</a></li>
+                        <li><a href="link_to_services">Services</a></li>
+                        <li><a href="link_to_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lisandroalvo/"><img src="../web-2023/img/Linkedin.svg" alt="LinkedIn"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/lisandroalvo"><img src="../web-2023/img/behance.png" alt="Behance"></a>
+                        </li>
+                        <li>
+                            <a href="mailto:lisandroalvo2@gmail.com"><img src="../web-2023/img/Frame 117.svg" alt="Email"></a>
+                        </li>
+                        <li>
+                            <a href="tel:your_phone_number"><img src="../web-2023/img/Frame 118.svg" alt="Phone"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-h3">
+                    <h3>lisandroalvo2@gmail.com / (+52) 55-73949035 </h3>
+                </div>
+                <!-- Rest of the footer code -->
+
+            </div>
+
+
+
+
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../web-2023/script.js"></script>
+
 </body>
 
 </html>
