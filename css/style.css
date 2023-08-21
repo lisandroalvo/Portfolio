@@ -307,6 +307,10 @@ a {
     /* adjust as needed */
 }
 
+.about-me-image img {
+    max-width: 500px;
+}
+
 .about-me-text {
     /* add styling for your text here */
     padding-left: 5%;
@@ -343,8 +347,17 @@ p {
 
 /* about me image purple right  */
 
-.about-me-image img {
-    width: 100%;
+#about-me-home {
+    display: flex;
+    flex-direction: row;
+    /* This will put the image first and then the text below */
+    align-items: center;
+    /* This centers the items */
+    color: white;
+}
+
+.about-me-image-home {
+    width: 50%;
     height: auto;
     padding-left: 0%;
 }
@@ -431,6 +444,62 @@ p {
     color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 5%;
+}
+
+.title-about {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title-project {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title-travelers {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 15%;
+}
+
+.title-weshare {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 15%;
+}
+
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title-travel {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title-escuchate {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 15%;
 }
 
 .project-container {
@@ -913,6 +982,10 @@ footer {
 }
 
 #featured-projects-travel {
+    padding-top: 250%;
+}
+
+#featured-projects-escuchate {
     padding-top: 250%;
 }
 
@@ -1695,6 +1768,27 @@ body {
         display: block;
         margin: auto;
     }
+    /* Purple about me section HOME */
+    #about-me-home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        /* This will put the image first and then the text below */
+        /* This centers the items */
+        color: white;
+    }
+    .about-me-text-home {
+        align-items: center;
+        padding-left: 2%;
+        width: 100%;
+    }
+    .purple {
+        width: 200%;
+        align-items: center;
+        height: auto;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
     /* Process Section */
     #process {
         padding: 10px;
@@ -1713,7 +1807,7 @@ body {
         /* Assuming two cards in a row, adjust as needed */
     }
     .study-cards img {
-        max-width: 100%;
+        max-width: 60%;
         /* Use percentage to make it responsive */
         height: auto;
         display: block;
@@ -2191,6 +2285,22 @@ body {
         display: block;
         margin: auto;
     }
+    #about-me-home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        /* This will put the image first and then the text below */
+        /* This centers the items */
+        color: white;
+    }
+    .about-me-text-home {
+        align-items: center;
+        padding-left: 2%;
+        width: 100%;
+    }
+    .purple {
+        width: 200%;
+    }
     /* ... */
     /* Testimonials */
     .reviews-clients {
@@ -2300,7 +2410,8 @@ body {
     }
     .project-container {
         flex-direction: column;
-        padding: 0 173px;
+        padding: 0 88px;
+        padding-top: 15%;
     }
     .proto {
         position: relative;
@@ -2314,7 +2425,7 @@ body {
         text-align: left;
     }
     .title {
-        padding-top: 25%;
+        padding-top: 55%;
     }
     /* Esperience section  */
     /* Tablet Specific Styles */
@@ -2326,6 +2437,52 @@ body {
     @media only screen and (max-width: 600px) {
         /* ... */
         /* Your mobile specific styles go here */
+    }
+    /* PAGE ESCUCHATE */
+    .featured-projects-escuchate {
+        padding-top: 95%;
+    }
+    .project-container-escuchate {
+        padding-top: 10%;
+        padding-left: 15%;
+    }
+    .title {
+        padding-top: 180%;
+    }
+    .process-cards {
+        width: 100%;
+    }
+    /* PAGE TRAVEL */
+    .title-travel {
+        padding-top: 45%;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+    /* PAGE YEP */
+    .title-yep {
+        padding-top: 70%;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+    /* PAGE WE SHARE */
+    .title-weshare {
+        padding-top: 210%;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+    .study-case-travel img {
+        max-width: 800px;
+        align-items: center;
+    }
+    /* PAGE WE SHARE */
+    .title-travelers {
+        padding-top: 330%;
+        text-align: center;
+        color: white;
+        font-size: 40px;
     }
 }
 

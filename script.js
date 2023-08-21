@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 
     const dynamicText = document.getElementById('dynamic-text');
-    const words = ['UX-UI Designer', 'UX Researcher', ' Web Developer', 'Illustrator', ];
+    const words = ['UX-UI Designer', 'UX Researcher', 'Web Developer', 'Illustrator', ];
     let i = 0;
 
     function changeText() {
