@@ -5,6 +5,391 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>About Me </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&family=Lato:wght@300&family=Noto+Serif+Lao:wght@600&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <!-- Other head elements -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <title> Projects </title>
 </head>
+
+<body class="project">
+    <div class="custom-cursor"></div>
+
+    <header>
+
+        <section class="navbar">
+            <img src="../img/logo.svg" class="logo">
+
+            <a href="https://www.linkedin.com/in/lisandroalvo/" target="_blank"> <img src="../img/Frame 119.svg" alt="LinkedIn" class="linkedin-img"></a>
+            <a href="https://www.behance.net/lisandroalvo" target="_blank"><img src="../img/Frame 120.svg" alt="Behance" class="behance-img"></a>
+
+        </section>
+        <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+
+        <nav id="navLinks">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sections/about.html">About</a></li>
+                <li><a href="../sections/projects.html">Projects</a></li>
+                <li><a href="../sections/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+        <section class="chat-section">
+            <div class="chatbox">
+                <div class="chat-logs"></div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Type your message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container-about">
+
+            </div>
+
+        </section>
+
+
+        <section>
+            <div>
+                <h1 class="title-about">I'm Lisandro!🖌️</h1>
+                <p class="about-p">Welcome to my about page! I'm Lisandro, a dedicated UX/UI designer with years of experience in crafting user-centric solutions...</p>
+            </div>
+        </section>
+
+        <section class="about-text">
+            <div class="my-img">
+                <img src="../img/about02.svg" class="about-img" alt="">
+            </div>
+
+            <div class="text-container-about">
+                <h1>My journey 🚀</h1>
+                <p id="about-p">From the earliest memories I have, art has been my life's anchor. As a child, sketching and painting were my most cherished activities, an innate passion that persisted and defined the trajectory of my professional journey. <br> <br> My
+                    formal education in art began at the Luis Ordoñez school, where I mastered the nuances of drawing and caricature. Further enriching my artistic foundation, I attended ICOP, diving deep into the vibrant world of comics. College further
+                    solidified my devotion to the arts. <br><br>My initial professional stint was at GCBA, where I served as a Community Manager for Horacio Rodriguez Larreta's government. At the Communications and Press division, I not only managed various
+                    social media portfolios but also led a talented team within the Jefatura de Gabinete department. But the pull of my artistic roots was strong, and soon I found myself at AVI Gráfica in Buenos Aires. <br><br> As a graphic designer,
+                    I blended my artistry with commercial designs. Parallelly, the world of tech intrigued me, and I ventured into software development, studying at the distinguished Da Vinci University. This combination of art and technology spurred
+                    me to begin freelancing, marrying design with functionality to create user-centric digital experiences. For over 12 years, I've been engrossed in the IT realm, dedicating the last six specifically to UX/UI design. <br><br> This journey
+                    has allowed me to collaborate with global entities from Spain, the Philippines, Mexico, and the United States. Now based in Mexico City, I work remotely, advocating for Human-Centered Design. Beyond the screens and pixels, I also enjoy
+                    illustrating comics and technical drawings, which I've been doing freelance since 2017. <br><br>But who am I beyond the work? A skateboard enthusiast, a martial artist, and an individual perpetually seeking growth.br <br><br> Each
+                    day presents an opportunity to evolve not just as a designer, but as a human being. Every project I undertake, I see as a chance to build a better, more inclusive world. That's the mission I wake up to every day.</p>
+            </div>
+
+        </section>
+        <section>
+            <div class="profile-section">
+
+
+                <div class="skills-about">
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>Illustrator</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>3D Artist</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>Graphic Designer</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>Web Developer</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>UX-UI Designer</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>UX Researcher</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>UI Designer</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percentage="100">
+                        <div class="skill-label">
+                            <label>Developer</label>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="profile-image">
+                    <img src="../img/about.png" alt="Profile Picture">
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
+        <section class="tools-section">
+            <h2>Tools I Use</h2>
+            <div class="tools-container">
+                <div class="tool">
+                    <img src="../img/Frame 149.svg" alt="Tool Name 1">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 150.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 151.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 152.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 153.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 154.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 155.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 156.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 157.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 158.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 159.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 160.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 161.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 162.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 163.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 164.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 165.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 166.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 167.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 168.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 169.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 170.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 171.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 172.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 173.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 174.svg" alt="Tool Name 2">
+                </div>
+
+                <div class="tool">
+                    <img src="../img/Frame 175.svg" alt="Tool Name 2">
+                </div>
+                <div class="tool">
+                    <img src="../img/Frame 176.svg" alt="Tool Name 2">
+                </div>
+
+                <!-- ... Repeat for other tools ... -->
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="https://ajax.gDoogleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="../script.js "></script>
+    <section id="reachOut-project">
+        <div class="form-container">
+            <h2>Let's chat about your project</h2>
+            <form name="contact" method="POST" data-netlify="true">
+
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+
+                <div class="checkbox-container">
+                    <p>How can I help you?</p>
+                    <div>
+                        <input type="checkbox" id="ux-ui-designer" name="services" value="UX/UI Designer">
+                        <label for="ux-ui-designer">UX/UI Designer</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ux-researcher" name="services" value="UX Researcher">
+                        <label for="ux-researcher">UX Researcher</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
+                        <label for="ui-motion">UI Motion</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
+                        <label for="ui-motion">Illustrations</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
+                        <label for="ui-motion">Web Development</label>
+                    </div>
+                    <!-- Add more checkboxes as needed -->
+
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+
+
+
+</body>
+<div id="chatbot">
+    <div class="chatbot-header" onclick="toggleChatbot()">Chat with Lisandro</div>
+    <div class="chatbot-body">
+        <div class="chatbot-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chatbot-shortcuts">
+            <button onclick="handleShortcut('downloadResume')">Download Lisandro's resume?</button>
+            <button onclick="handleShortcut('scheduleMeeting')">Schedule a meeting?</button>
+            <button onclick="handleShortcut('viewProjects')">See projects?</button>
+            <button onclick="handleShortcut('sendEmail')">Send an email?</button>
+            <button onclick="handleShortcut('viewLinkedIn')">View LinkedIn?</button>
+        </div>
+        <input class="chatbot-input" type="text" placeholder="Type a message..." onkeyup="handleUserInput(event)">
+    </div>
+</div>
+
+
+
+<footer class="travel-footer ">
+
+    <div class="footer-container ">
+        <div class="footer-left ">
+            <img src="../img/logo.svg" alt="Your Logo " class="footer-logo ">
+            <p class="foot-text ">Lisandro Alvo is a dedicated UX Designer and Innovation Strategist, deeply rooted in the Human-Centered Design approach based in Mexico City, Mexico.</p>
+        </div>
+        <div class="footer-center ">
+            <ul>
+                <li><a href="link_to_homepage ">Home</a></li>
+                <li><a href="link_to_about ">About</a></li>
+                <li><a href="link_to_services ">Services</a></li>
+                <li><a href="link_to_contact ">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right ">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/lisandroalvo/ "><img src="../img/Linkedin.svg " alt="LinkedIn "></a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/lisandroalvo "><img src="../img/behance.png " alt="Behance "></a>
+                </li>
+                <li>
+                    <a href="mailto:lisandroalvo2@gmail.com "><img src="../img/Frame 117.svg " alt="Email "></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/525573949035" target="_blank"><img src="../img/Frame 118.svg " alt="Phone "></a>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-h3 ">
+            <h3>lisandroalvo2@gmail.com / (+52) 55-73949035 </h3>
+        </div>
+
+
+</footer>
+
+</html>

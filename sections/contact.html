@@ -5,6 +5,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Contact </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&family=Lato:wght@300&family=Noto+Serif+Lao:wght@600&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <!-- Other head elements -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <title> Contact </title>
 </head>
+
+<body class="contact-section">
+    <div class="custom-cursor"></div>
+
+    <header>
+
+        <section class="navbar">
+            <img src="../img/logo.svg" class="logo">
+
+            <a href="https://www.linkedin.com/in/lisandroalvo/" target="_blank"> <img src="../img/Frame 119.svg" alt="LinkedIn" class="linkedin-img"></a>
+            <a href="https://www.behance.net/lisandroalvo" target="_blank"><img src="../img/Frame 120.svg" alt="Behance" class="behance-img"></a>
+
+        </section>
+        <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+
+        <nav id="navLinks">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sections/about.html">About</a></li>
+                <li><a href="../sections/projects.html">Projects</a></li>
+                <li><a href="../sections/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <script src="https://ajax.gDoogleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="../script.js "></script>
+    <section id="reachOut-project-contact">
+        <div class="form-container">
+            <h2>Let's chat about your project</h2>
+            <form name="contact" method="POST" data-netlify="true">
+
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+
+                <div class="checkbox-container">
+                    <p>How can I help you?</p>
+                    <div>
+                        <input type="checkbox" id="ux-ui-designer" name="services" value="UX/UI Designer">
+                        <label for="ux-ui-designer">UX/UI Designer</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ux-researcher" name="services" value="UX Researcher">
+                        <label for="ux-researcher">UX Researcher</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
+                        <label for="ui-motion">UI Motion</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
+                        <label for="ui-motion">Illustrations</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
+                        <label for="ui-motion">Web Development</label>
+                    </div>
+                    <!-- Add more checkboxes as needed -->
+
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+
+<div id="chatbot">
+    <div class="chatbot-header" onclick="toggleChatbot()">Chat with Lisandro</div>
+    <div class="chatbot-body">
+        <div class="chatbot-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chatbot-shortcuts">
+            <button onclick="handleShortcut('downloadResume')">Download Lisandro's resume?</button>
+            <button onclick="handleShortcut('scheduleMeeting')">Schedule a meeting?</button>
+            <button onclick="handleShortcut('viewProjects')">See projects?</button>
+            <button onclick="handleShortcut('sendEmail')">Send an email?</button>
+            <button onclick="handleShortcut('viewLinkedIn')">View LinkedIn?</button>
+        </div>
+        <input class="chatbot-input" type="text" placeholder="Type a message..." onkeyup="handleUserInput(event)">
+    </div>
+</div>
+
+
+
+<footer class="travel-footer ">
+
+    <div class="footer-container ">
+        <div class="footer-left ">
+            <img src="../img/logo.svg" alt="Your Logo " class="footer-logo ">
+            <p class="foot-text ">Lisandro Alvo is a dedicated UX Designer and Innovation Strategist, deeply rooted in the Human-Centered Design approach based in Mexico City, Mexico.</p>
+        </div>
+        <div class="footer-center ">
+            <ul>
+                <li><a href="link_to_homepage ">Home</a></li>
+                <li><a href="link_to_about ">About</a></li>
+                <li><a href="link_to_services ">Services</a></li>
+                <li><a href="link_to_contact ">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right ">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/lisandroalvo/ "><img src="../img/Linkedin.svg " alt="LinkedIn "></a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/lisandroalvo "><img src="../img/behance.png " alt="Behance "></a>
+                </li>
+                <li>
+                    <a href="mailto:lisandroalvo2@gmail.com "><img src="../img/Frame 117.svg " alt="Email "></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/525573949035" target="_blank"><img src="../img/Frame 118.svg " alt="Phone "></a>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-h3 ">
+            <h3>lisandroalvo2@gmail.com / (+52) 55-73949035 </h3>
+        </div>
+
+
+</footer>
+
+</html>
