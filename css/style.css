@@ -864,6 +864,11 @@ footer {
     padding-bottom: 5%;
 }
 
+.proto {
+    position: relative;
+    width: 100%;
+}
+
 .proto h1 {
     text-align: center;
     font-size: 50px;
@@ -2264,6 +2269,52 @@ body {
     }
     .testimonial-role {
         padding-left: 10%;
+    }
+    /* PAGE ABOUT */
+    .profile-section {
+        flex-direction: column-reverse
+    }
+    .form-container {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .checkbox-container {
+        padding-top: 1%;
+    }
+    /* PAGE TRAVELERS */
+    .banner-traveler img {
+        width: 1000px;
+        padding-top: 5%;
+    }
+    .travel-01 {
+        width: 800px;
+    }
+    .banner-traveler-02 img {
+        width: 1000px;
+    }
+    .study-case-travel {
+        width: 150px;
+    }
+    .study-case-travel img {
+        width: 950px;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 0 173px;
+    }
+    .proto {
+        position: relative;
+        width: 100%;
+        /* you need to define a height here, you can set it to whatever you want, for example: */
+        height: 500px;
+    }
+    .project-overview p {
+        padding-right: 5%;
+        margin-left: 5%;
+        text-align: left;
+    }
+    .title {
+        padding-top: 25%;
     }
     /* Esperience section  */
     /* Tablet Specific Styles */
