@@ -149,9 +149,9 @@ function toggleChatbot() {
 
 function downloadResume() {
     var link = document.createElement('a');
-    link.href = '../web-2023/img/RESUMEAgost.pdf';
+    link.href = '../img/RESUMEAgost.pdf';
     target = "_blank"
-    link.download = '../web-2023/img/RESUMEAgost.pdf'
+    link.download = '../img/RESUMEAgost.pdf'
     target = "_blank";
     document.body.appendChild(link);
     link.click();
@@ -166,7 +166,7 @@ function handleShortcut(action) {
 
         case 'downloadResume':
             downloadResume();
-            userQuery = "You selected: Downloading Lisandro's resume...";
+            userQuery = "../section/img/RESUMEAgost.pdf";
             break;
 
         case 'downloadResume':
@@ -199,11 +199,13 @@ function handleShortcut(action) {
 }
 
 function sendEmailToLisandro() {
-    window.open("mailto:lisandroalvo2@gmail.com?subject=Contact from Website&body=Hello Lisandro,", '_blank');
+    var mailLink = "mailto:lisandroalvo2@gmail.com?subject=Contact from Website&body=Hello Lisandro,";
+    window.location.href = mailLink;  // Instead of window.open, try using window.location.href
 }
 
+
 function redirectToProjects() {
-    window.location.href = "../web-2023/sections/projects.html"; // This will navigate to the projects section on the same page.
+    window.location.href = "../sections/projects.html"; // This will navigate to the projects section on the same page.
 }
 
 function redirectToLinkedIn() {
