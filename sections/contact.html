@@ -62,47 +62,46 @@
         <div class="form-container">
             <h2>Let's chat about your project</h2>
             <form name="contact" method="POST" data-netlify="true">
-
+                <input type="hidden" name="form-name" value="contact">
+    
                 <input type="text" id="name" name="name" placeholder="Name">
                 <input type="email" id="email" name="email" placeholder="Email">
                 <textarea id="message" name="message" placeholder="Message"></textarea>
-
+    
                 <div class="checkbox-container">
                     <p>How can I help you?</p>
                     <div>
                         <input type="checkbox" id="ux-ui-designer" name="services" value="UX/UI Designer">
                         <label for="ux-ui-designer">UX/UI Designer</label>
                     </div>
-
+    
                     <div>
                         <input type="checkbox" id="ux-researcher" name="services" value="UX Researcher">
                         <label for="ux-researcher">UX Researcher</label>
                     </div>
-
+    
                     <div>
                         <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
                         <label for="ui-motion">UI Motion</label>
                     </div>
-
+    
                     <div>
-                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
-                        <label for="ui-motion">Illustrations</label>
+                        <input type="checkbox" id="illustrations" name="services" value="Illustrations">
+                        <label for="illustrations">Illustrations</label>
                     </div>
-
+    
                     <div>
-                        <input type="checkbox" id="ui-motion" name="services" value="UI Motion">
-                        <label for="ui-motion">Web Development</label>
+                        <input type="checkbox" id="web-development" name="services" value="Web Development">
+                        <label for="web-development">Web Development</label>
                     </div>
                     <!-- Add more checkboxes as needed -->
-
+    
                 </div>
                 <input type="submit" value="Submit">
             </form>
         </div>
     </section>
-
-
-
+    
 
 </body>
 <div id="chatbot">
