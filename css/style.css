@@ -1263,12 +1263,25 @@ footer {
     height: auto;
 }
 
+.project-cont {
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    height: 1100px;
+    background-color: rgb(31, 31, 31);
+    --cursorX: 0;
+    --cursorY: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrollbar */
+}
 #reachOut-project-contact {
-    margin-top: 8%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 124vh;
     /* adjust as needed */
     background-image: url(../img/heroImage.png);
     width: 100%;
@@ -1296,6 +1309,7 @@ footer {
     overflow-x: hidden;
     /* Prevent horizontal scrollbar */
 }
+
 
 
 /* Chatbot */
