@@ -1470,8 +1470,7 @@ body {
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: none
-    /* Reduced time for more responsive movement */
-    z-index: none;
+    /* Reducgit  none;
     opacity: 0.8;
     /* Makes it a bit transparent */
     animation: trail-effect 0.5s infinite;
@@ -1714,7 +1713,7 @@ body {
     #about-me .skills {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
         /* Adjust gap between images */
     }
     #about-me .skills img {
@@ -1729,7 +1728,11 @@ body {
         display: block;
         margin: auto;
     }
+
+
     /* Purple about me section HOME */
+
+
     #about-me-home {
         display: flex;
         flex-direction: column-reverse;
@@ -1737,6 +1740,7 @@ body {
         /* This will put the image first and then the text below */
         /* This centers the items */
         color: white;
+        padding: 3%;
     }
     .about-me-text-home {
         align-items: center;
@@ -1749,6 +1753,13 @@ body {
         height: auto;
         padding-left: 0%;
         padding-right: 0%;
+    }
+    .skills {
+        justify-content: space-evenly
+        padding-top: 5%;
+        display: flex;
+        justify-content: left;
+        gap: 18px;
     }
     /* Process Section */
     #process {
