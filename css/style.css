@@ -307,6 +307,16 @@ a {
     /* adjust as needed */
 }
 
+#about-me-home {
+    padding-top: 3%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    /* adjust as needed */
+    padding: 5%;
+}
+
 .about-me-image img {
     max-width: 500px;
 }
