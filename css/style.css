@@ -1558,12 +1558,12 @@ body {
         height: 100px;
         /* reduced for mobile */
         background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(100px);
         z-index: 1000;
     }
     .hamburger-menu {
         padding-left: 20px;
-        cursor: pointer;
+        cursor: none;
         display: block;
         width: 1px;
         /* reduced for mobile */
@@ -1648,14 +1648,12 @@ body {
     }
     #navLinks a {
         text-decoration: none;
-        color: rgb(88, 88, 88);
-        font-size: 2rem;
+        color: #6a37fc;
+        font-size: 4rem;
         /* reduced for mobile */
         transition: color 0.2s;
     }
-    #navLinks a:hover {
-        color: #6a37fc;
-    }
+    
     .show {
         left: 0;
     }
