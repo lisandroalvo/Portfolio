@@ -1460,6 +1460,23 @@ body {
    body{
     cursor: none;
    }
+   .cursor {
+    position: none
+    ;
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: #6a37fc;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: none
+    /* Reduced time for more responsive movement */
+    z-index: none;
+    opacity: 0.8;
+    /* Makes it a bit transparent */
+    animation: trail-effect 0.5s infinite;
+    /* Adds an animation for the trail effect */
+}
     .container {
         height: 700px;
         background-size: 380%;
