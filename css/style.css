@@ -1462,7 +1462,7 @@ body {
     }
     .container {
         height: 700px;
-        background-size: 280%;
+        background-size: 380%;
         background-position: 30%;
     }
     .heroText {
@@ -1888,8 +1888,9 @@ body {
     /* reach out CONTACT */
     #reachOut {
         padding: 8px;
-        background-size: 450%;
-        background-position: 0%;
+        background-size: 380%;
+        background-position: 30%;
+        padding-bottom: 15%;
     }
     .form-container {
         text-align: center;
