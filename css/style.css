@@ -1443,128 +1443,7 @@ body {
 }
 
 
-/* Adjustments for small mobile screens */
 
-@media (max-width: 480px) {
-    /* ... Other mobile styles ... */
-    /* Default styles for Mobile */
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 1000px;
-        /* reduced for mobile */
-        background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(10px);
-        z-index: 1000;
-        background-color: red;
-    }
-    .hamburger-menu {
-        cursor: pointer;
-        display: block;
-        width: 20px;
-        /* reduced for mobile */
-        height: 18px;
-        /* reduced for mobile */
-        margin: 10px;
-        /* reduced for mobile */
-        position: fixed;
-        top: 10px;
-        /* aligned with the navbar's height */
-        right: 10px;
-        /* changed to right for better positioning */
-        z-index: 1001;
-        /* slightly higher than navbar for overlay */
-    }
-    .hamburger-menu div {
-        width: 100%;
-        height: 3px;
-        /* slightly reduced for mobile */
-        background-color: #6a37fc;
-        margin: 5px 0;
-        transition: all 0.3s;
-        border-radius: 12px;
-    }
-    /* When menu is active */
-    .change .hamburger-menu div {
-        background-color: #f00;
-        /* change color */
-    }
-    .change .bar1 {
-        transform: rotate(-45deg) translate(-7px, 5px);
-        /* adjusted for smaller screen */
-    }
-    .change .bar2 {
-        opacity: 0;
-    }
-    .change .bar3 {
-        transform: rotate(45deg) translate(-7px, -7px);
-        /* adjusted for smaller screen */
-    }
-    #navLinks {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(50px);
-        left: -100%;
-        transition: all 0.5s ease;
-        top: 0;
-        /* Ensuring it starts from the top */
-        z-index: 999;
-        /* Behind the hamburger menu */
-    }
-    #navLinks ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    #navLinks a {
-        text-decoration: none;
-        color: rgb(88, 88, 88);
-        font-size: 2rem;
-        /* reduced for mobile */
-        transition: color 0.2s;
-    }
-    #navLinks a:hover {
-        color: #6a37fc;
-    }
-    .show {
-        left: 0;
-    }
-    #chatbot {
-        width: 70%;
-        max-width: 200px;
-        position: fixed;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .my-craft img,
-    .chart-image,
-    .company-logo {
-        max-width: 8px;
-    }
-    .behance-img {
-        padding-left: 0%;
-        padding-top: 20%;
-    }
-    .linkedin-img {
-        padding-top: 2%;
-        padding-left: 10120px;
-        max-width: 10%;
-    }
-    .logo {
-        padding-left: 2%;
-        padding-top: 50%;
-    }
-}
 
 
 /* Adjustments for tablets and medium-sized devices */
@@ -1572,7 +1451,7 @@ body {
 
 /* 481 px MOBILE DEVICE */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
     /* ... Other tablet styles ... */
     .container {
         height: 740px;
