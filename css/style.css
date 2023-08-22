@@ -1120,17 +1120,22 @@ footer {
     padding-right: 15%;
 }
 
-.about-text {
+.about-text-about{
     padding-top: 35%;
     color: white;
     display: flex;
-    align-items: start;
-    /* Adjusts vertical alignment */
+flex-direction: row;    /* Adjusts vertical alignment */
     justify-content: space-between;
     padding: 2% 5%;
     /* Adjusts space around content */
 }
 
+
+
+.about-img-about{
+    max-width: 900px;
+    height: auto;
+}
 .text-container-about {
     text-align: left;
     padding-left: 5%;
@@ -1176,6 +1181,13 @@ footer {
     padding: 20px 0;
 }
 
+.profile-section-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    padding-left: 5%;
+}
 .skills-about {
     width: 60%;
     padding-right: 20px;
@@ -2540,3 +2552,5 @@ body {
         max-width: 500px;
     }
 }
+
+
