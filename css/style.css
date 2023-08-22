@@ -1449,10 +1449,508 @@ body {
 /* Adjustments for tablets and medium-sized devices */
 
 
+/* 375 px MOBILE DEVICE */
+
+
+
+/*  37 px MOBILE DEVICE */
+
+@media (min-width: 375px) and (max-width: 481px) {
+    /* ... Other tablet styles ... */
+    cursor: {
+        cursor: none;
+    }
+    .container {
+        height: 700px;
+        background-size: 280%;
+        background-position: 30%;
+    }
+    .heroText {
+        padding-bottom: 108px;
+        margin: -24px;
+        padding-top: 45%;
+        margin-left: 139px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: ;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        flex-wrap: nowrap;
+    }
+    .hero-buttons {
+        padding-left: 00%;
+        width: 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+    }
+    .button1 {
+        margin-left: 0%;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        /* decreased from 24px for smaller text size */
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        margin-bottom: 20px;
+        /* gap between button1 and button2 */
+    }
+    .button2 {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        /* decreased from 24px for smaller text size */
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: none;
+        border-style: outset;
+        border-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+        /* gap between button1 and button2, in combination with button1's margin-bottom */
+    }
+    .button1,
+    .button2 {
+        white-space: nowrap;
+        /* Ensure text doesn't break onto a new line */
+        min-width: 287px;
+        /* Ensure a minimum width for your button to accommodate the text. Adjust as necessary. */
+        text-align: center;
+        /* Center text horizontally */
+        display: flex;
+        /* Turn the button into a flex container */
+        align-items: center;
+        /* Center content vertically in the flex container */
+        justify-content: center;
+        /* Center content horizontally in the flex container */
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        /* reduced for mobile */
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+    .hamburger-menu {
+        padding-left: 20px;
+        cursor: pointer;
+        display: block;
+        width: 1px;
+        /* reduced for mobile */
+        height: 18px;
+        /* reduced for mobile */
+        margin: 10px;
+        /* reduced for mobile */
+        position: fixed;
+        top: 30px;
+        /* aligned with the navbar's height */
+        right: 420px;
+        /* changed to right for better positioning */
+        z-index: 1001;
+        /* slightly higher than navbar for overlay */
+    }
+    .logo{
+        height: 44px;
+        width: auto;
+        padding-left: 45%;
+        padding-top: 35px;
+    }
+
+    
+.behance-img {
+    padding-left: 3%;
+    width: 40px;
+    height: auto;
+}
+.linkedin-img {
+    padding-left: 30px;
+    width: 40px;
+    height: auto;
+}
+    
+    .hamburger-menu div {
+        padding-left: 100px;
+        width: 100%;
+        height: 3px;
+        /* slightly reduced for mobile */
+        background-color: #6a37fc;
+        margin: 5px 0;
+        transition: all 0.3s;
+        border-radius: 12px;
+    }
+    /* When menu is active */
+    .change .hamburger-menu div {
+        /* change color */
+    }
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 5px);
+        /* adjusted for smaller screen */
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+        /* adjusted for smaller screen */
+    }
+    #navLinks {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(50px);
+        left: -100%;
+        transition: all 0.5s ease;
+        top: 0;
+        /* Ensuring it starts from the top */
+        z-index: 999;
+        /* Behind the hamburger menu */
+    }
+    #navLinks ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #navLinks a {
+        text-decoration: none;
+        color: rgb(88, 88, 88);
+        font-size: 2rem;
+        /* reduced for mobile */
+        transition: color 0.2s;
+    }
+    #navLinks a:hover {
+        color: #6a37fc;
+    }
+    .show {
+        left: 0;
+    }
+    /* Experience Section   companies */
+    #experience {
+        padding: 10px;
+        /* Adjust as required */
+    }
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* Space between logos */
+    }
+    .company-logos a {
+        display: flex;
+        margin: 5px;
+        /* Margin around each logo to give some spacing */
+    }
+    .company-logos img {
+        max-width: 100px;
+        /* Or whatever size you feel looks best */
+        height: auto;
+        /* maintain aspect ratio */
+    }
+    #about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        /* This will put the image first and then the text below */
+        align-items: center;
+        /* This centers the items */
+    }
+    .about-me-text,
+    .about-me-image {
+        width: 100%;
+        /* Ensuring they take the full width */
+    }
+    .about-me-image img {
+        max-width: 100%;
+        /* Making sure the image doesn't exceed the parent's width */
+        height: auto;
+        /* Preserving the aspect ratio */
+    }
+    #about-me {
+        font-size: 14px;
+        /* Adjust this to fit the design */
+        padding: 52px;
+        gap: 0px;
+    }
+    #about-me h2 {
+        font-size: 18px;
+    }
+    #about-me .skills {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        /* Adjust gap between images */
+    }
+    #about-me .skills img {
+        max-width: 180px;
+        /* Adjust image size as needed */
+        height: auto;
+    }
+    .about-me-image img {
+        max-width: 480px;
+        /* Adjust image size as needed */
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    /* Purple about me section HOME */
+    #about-me-home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        /* This will put the image first and then the text below */
+        /* This centers the items */
+        color: white;
+    }
+    .about-me-text-home {
+        align-items: center;
+        padding-left: 2%;
+        width: 100%;
+    }
+    .purple {
+        width: 200%;
+        align-items: center;
+        height: auto;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    /* Process Section */
+    #process {
+        padding: 10px;
+    }
+    #process h2.text-study {
+        font-size: 18px;
+    }
+    .study-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .study-cards .card-st {
+        flex: 1 0 calc(50% - 150px);
+        /* Assuming two cards in a row, adjust as needed */
+    }
+    .study-cards img {
+        max-width: 60%;
+        /* Use percentage to make it responsive */
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    #process .process-cards {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow wrapping of items */
+        justify-content: center;
+        /* Center items horizontally */
+        gap: 61px;
+    }
+    #process .card img {
+        max-width: 100%;
+        /* Ensure images do not exceed their containers */
+        height: auto;
+    }
+    #featured-projects .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 26px;
+    }
+    #featured-projects .project-card {
+        width: 100%;
+        box-sizing: border-box;
+        /* To make sure padding and border are included in total width/height */
+        margin-bottom: 15px;
+        /* Add some space between cards on mobile */
+    }
+    #featured-projects .project-image {
+        max-width: 100%;
+        height: auto;
+    }
+    #featured-projects .project-description {
+        padding: 10px;
+        /* Reduce padding for mobile */
+    }
+    /* Testimonials  */
+
+    .reviews-clients {
+        padding: -41px;
+        text-align: center;
+        width: 100%;
+        height: 861px;
+    }
+   
+    .form-container {
+        padding: 42px;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-reviews h2 {
+        margin-bottom: 20px;
+        padding-left: 0%;
+        font-size: 30px;
+    }
+    .title-reviews h3 {
+        margin-bottom: 20px;
+        padding-left: 0%;
+        font-size: 20px;
+    }
+    .testimonial-container-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .testimonial-1 {
+        padding-left: 0%;
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+    }
+    .testimonial-role {
+        padding-left: 0%;
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+    }
+    .stars {
+        padding-left: 0%;
+    }
+    .testimonial {
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .testimonial-name {
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .testimonial-4 {
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .testimonial-3 {
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .testimonial-2 {
+        padding: 5px;
+        padding-left: 2%;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 5%;
+    }
+    .testimonial-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        padding-left: 2%;
+    }
+
+   
+    .testimonial-name,
+    .testimonial-role,
+    .stars {
+        margin-bottom: 10px;
+    }
+    .testimonial-text {
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 20%;
+    }
+    /* reach out CONTACT */
+    #reachOut {
+        padding: 8px;
+        background-size: 350%;
+        background-position: 30%;
+    }
+    .form-container {
+        text-align: center;
+        max-width: 500px;
+        /* Set your preferred max width */
+        margin: 0 auto;
+        /* Centering the form on the page */
+        padding-bottom: 5%;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        /* Ensures padding is included in the total width */
+    }
+    .form-container form {
+        padding-bottom: 15%;
+    }
+    .checkbox-container {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .checkbox-container div {
+        margin-bottom: 10px;
+    }
+    /* Chatbot */
+    #chatbot {
+        max-width: 100vw;
+        /* Ensure chatbot doesn't exceed viewport width */
+    }
+    /* Footer */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        /* Stack items by default */
+        align-items: center;
+        /* Center items for narrow screens */
+        padding: 20px;
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin-bottom: 20px;
+    }
+    .foot-h3 {
+        text-align: center;
+    }
+
+
+
+
 /* 481 px MOBILE DEVICE */
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     /* ... Other tablet styles ... */
+    cursor: {
+        cursor: none;
+    }
     .container {
         height: 740px;
         background-size: 250%;
