@@ -1457,9 +1457,9 @@ body {
 
 @media (min-width: 375px) and (max-width: 481px) {
     /* ... Other tablet styles ... */
-    cursor: {
-        cursor: none;
-    }
+   body{
+    cursor: none;
+   }
     .container {
         height: 700px;
         background-size: 380%;
