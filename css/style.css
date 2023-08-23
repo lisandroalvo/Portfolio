@@ -1981,8 +1981,106 @@ body {
     .foot-h3 {
         text-align: center;
     }
+    #featured-projects .project-title,
+    #featured-projects .caption {
+        font-size: 0.9em;
+        /* Adjust as necessary */
+    }
+    #featured-projects .project-summary {
+        font-size: 0.8em;
+        /* Adjust as necessary */
+    }
+}
+.more-works {
+    text-align: center;
+    /* Center the text */
+    margin-top: 20px;
+    /* Add some space above this element */
+}
+#chatbot {
+    width: 70%;
+    max-width: 200px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.my-craft img,
+.chart-image,
+.company-logo {
+    max-width: 8px;
+}
+.behance-img {
+    padding-top: 0%;
+    padding-left: 5%;
+    max-width: 8%;
+    padding-bottom: 5%;
+}
+.linkedin-img {
+    padding-top: 0%;
+    padding-left: 15%;
+    max-width: 8%;
+    padding-bottom: 5%;
+}
+.logo {
+    max-width: 15%;
+    padding-left: 42%;
+}
+/* PAGE ABOUT */
+.profile-section {
+    flex-direction: column-reverse
+}
+.form-container {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.checkbox-container {
+    padding-top: 1%;
+}
+/* PAGE TRAVELERS */
+.banner-traveler img {
+    width: 528px;
+    padding-top: 12%;
+}
+.travel-01 {
+    width: 352px;
+}
+.banner-traveler-02 img {
+    width: 550px;
+}
+.study-case-travel {
+    width: 150px;
+}
+.study-case-travel img {
+    padding-top: 500px;
+    width: 400px;
+}
+.project-container {
+    flex-direction: column;
+    padding: 0 18px;
+}
+.proto {
+    position: relative;
+    width: 100%;
+    /* you need to define a height here, you can set it to whatever you want, for example: */
+    height: 500px;
+}
+.project-overview p {
+    padding-right: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+.title {
+    padding-top: 25%;
+}
 
-
+.title-travel {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 150%;
+}
 
 
 /* 481 px MOBILE DEVICE */
