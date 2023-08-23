@@ -1663,6 +1663,7 @@ body {
         font-size: 4rem;
         /* reduced for mobile */
         transition: color 0.2s;
+        
     }
     
     .show {
