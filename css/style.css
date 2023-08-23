@@ -2052,7 +2052,7 @@ body {
     width: 150px;
 }
 .study-case-travel img {
-    padding-top: 500px;
+    padding-top: 0px;
     width: 400px;
 }
 .project-container {
@@ -2074,6 +2074,8 @@ body {
     padding-top: 25%;
 }
 
+
+
 .title-travel {
     size: 100px;
     font-weight: bolder;
@@ -2082,6 +2084,108 @@ body {
     padding-top: 150%;
 }
 
+.title-travelers {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 520%;
+}
+.title-weshare {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 230%;
+}
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 170%;
+}
+
+#featured-projects-escuchate {
+    padding-top: 460%;
+}
+
+/* about me  */
+
+
+.title-about {
+    text-align: center;
+    height: 43px;
+    color: white;
+    font-size: 30px;
+}
+.about-p {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.container-about {
+    width: 100%;
+    height: 509px;
+    background-position: 60%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/about01.svg);
+    border: 2px;
+    padding-top: 8%;
+}
+.about-img-about {
+    max-width: 342px;
+    height: auto;
+}
+.about-text-about {
+    padding-top: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+.profile-section-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    padding-left: 5%;
+    flex-direction: column-reverse;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.title-project {
+    padding-top: 101px;
+    color: white;
+    text-align: center;
+}
+
+#reachOut-project-contact {
+    margin-top: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 124vh;
+    /* adjust as needed */
+    background-image: url(../img/heroImage.png);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/heroImage.png);
+    border: 2px;
+    padding-top: 0%;
+    color: white;
+    font-family: sans-serif;
+}
 
 /* 481 px MOBILE DEVICE */
 
