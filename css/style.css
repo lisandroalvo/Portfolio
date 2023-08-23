@@ -1813,6 +1813,8 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 0 26px;
+        motion: none;
+        transition: none;
     }
     #featured-projects .project-card {
         width: 100%;
