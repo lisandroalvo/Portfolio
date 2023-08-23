@@ -376,7 +376,7 @@ p {
 /* id section */
 
 #process {
-    padding-top: 5%;
+    padding-top: 0%;
 }
 
 
@@ -1990,7 +1990,7 @@ body {
         font-size: 0.8em;
         /* Adjust as necessary */
     }
-}
+
 .more-works {
     text-align: center;
     /* Center the text */
@@ -2071,7 +2071,7 @@ body {
     text-align: left;
 }
 .title {
-    padding-top: 25%;
+    padding-top: 5%;
 }
 
 
@@ -2168,7 +2168,7 @@ h2 {
 }
 
 #reachOut-project-contact {
-    margin-top: 27%;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
