@@ -1638,8 +1638,8 @@ body {
         position: fixed;
         height: 100vh;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(50px);
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(150px);
         left: -100%;
         transition: all 0.5s ease;
         top: 0;
