@@ -2052,7 +2052,7 @@ body {
     width: 150px;
 }
 .study-case-travel img {
-    padding-top: 0px;
+    padding-top: 426px;
     width: 400px;
 }
 .project-container {
@@ -2061,6 +2061,7 @@ body {
 }
 .proto {
     position: relative;
+    align-items: center;
     width: 100%;
     /* you need to define a height here, you can set it to whatever you want, for example: */
     height: 500px;
