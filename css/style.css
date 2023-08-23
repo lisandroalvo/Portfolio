@@ -2052,9 +2052,18 @@ body {
     width: 150px;
 }
 .study-case-travel img {
-    padding-top: 0px;
+    padding-top: 420px;
     width: 400px;
 }
+.study-case-travel-travelers img {
+    padding-top: 630px;
+    width: 400px;
+}
+#featured-projects-travel {
+    padding-top: 0%;
+}
+
+
 .project-container {
     flex-direction: column;
     padding: 0 18px;
@@ -2081,6 +2090,13 @@ body {
     padding-top: 5%;
 }
 
+.title-travel-travelers {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20%;
+}
 
 
 .title-travel {
@@ -2103,7 +2119,7 @@ body {
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 230%;
+    padding-top: 80%;
 }
 .title-yep {
     size: 100px;
