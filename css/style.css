@@ -2052,12 +2052,18 @@ body {
     width: 150px;
 }
 .study-case-travel img {
-    padding-top: 426px;
+    padding-top: 0px;
     width: 400px;
 }
 .project-container {
     flex-direction: column;
     padding: 0 18px;
+}
+.escuchate-01{
+    padding-top: 0%;
+}
+.escuchate-02{
+    padding-top: 0%;
 }
 .proto {
     position: relative;
@@ -2090,7 +2096,7 @@ body {
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 520%;
+    padding-top: 330%;
 }
 .title-weshare {
     size: 100px;
