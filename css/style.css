@@ -3916,20 +3916,30 @@ h2 {
     padding-top: 2%;
 }
 .about-img-about {
-    max-width: 1008px;
+    max-width: 900px;
     height: auto;
     padding-left: 12%;
+    padding-top: 18%;
 }
 .about-text-about {
-    padding-top: 35%;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     padding: 2% 5%;
     padding-top: 2%;
     padding-right: 5%;
     padding-bottom: 2%;
     padding-left: 5%;
+}
+.text-container-about p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 25%;
+}
+.text-container-about h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-left: 25%;
 }
 }
