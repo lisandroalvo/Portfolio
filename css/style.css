@@ -2075,7 +2075,7 @@ body {
     padding-top: 419px;
     width: 450px;
 }
-}
+
 #featured-projects-travel {
     padding-top: 0%;
 }
@@ -2093,7 +2093,7 @@ body {
     padding-top: 0%;
 }
 .escuchate-02{
-    width: 420px;
+    width: 390px;
     padding-top: 31%;
 }
 .proto {
@@ -2162,12 +2162,12 @@ body {
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 130%;
+    padding-top: 180%;
 }
 
 #study-escuchate{
     padding-top: 0%;
-    width: 420px;
+    width: 390px;
 
 }
 #featured-projects-escuchate {
@@ -2259,6 +2259,8 @@ h2 {
 #featured-projects-weshare {
     padding-top: 4%;
 }
+
+}
 /* 481 px MOBILE DEVICE */
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -2272,8 +2274,8 @@ h2 {
         background-position: 40%;
     }
     .heroText {
-        margin: -11px;
-        padding-top: 25%;
+        margin: -87px;
+        padding-top: 35%;
         margin-left: 100px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         font-size: 50px;
@@ -2352,21 +2354,15 @@ h2 {
     .hamburger-menu {
         cursor: pointer;
         display: block;
-        width: 40px;
-        /* reduced for mobile */
+        width: 57px;
         height: 18px;
-        /* reduced for mobile */
         margin: 10px;
-        /* reduced for mobile */
-        position: fixed;
-        top: 30px;
-        /* aligned with the navbar's height */
-        right: 420px;
-        /* changed to right for better positioning */
-        z-index: 1001;
-        /* slightly higher than navbar for overlay */
+        position: fixed;   /* This will keep it in a fixed position relative to the viewport */
+        top: 30px;         /* 30 pixels from the top */
+        right: 417px;       /* Change this to keep it consistent from the right edge */
+        z-index: 1001;     /* Ensures it's above most other content */
     }
-    .hamburger-menu div {
+    .burger-menu div {
         width: 100%;
         height: 3px;
         /* slightly reduced for mobile */
@@ -2577,7 +2573,7 @@ h2 {
     }
     /* Testimonials  */
     .reviews-clients {
-        padding: 20px;
+        padding: -33px;
         text-align: center;
         width: 100%;
         height: 765px;
@@ -2712,18 +2708,7 @@ h2 {
     .foot-h3 {
         text-align: center;
     }
-    /* Other sizes for ......Font adjustments for smaller screens */
-    @media screen and (max-height: 480px) {
-        #featured-projects .project-title,
-        #featured-projects .caption {
-            font-size: 0.9em;
-            /* Adjust as necessary */
-        }
-        #featured-projects .project-summary {
-            font-size: 0.8em;
-            /* Adjust as necessary */
-        }
-    }
+   
     .more-works {
         text-align: center;
         /* Center the text */
@@ -2747,17 +2732,19 @@ h2 {
         padding-top: 0%;
         padding-left: 5%;
         max-width: 8%;
-        padding-bottom: 5%;
+        padding-bottom: 0%;
     }
     .linkedin-img {
         padding-top: 0%;
         padding-left: 15%;
         max-width: 8%;
-        padding-bottom: 5%;
+        padding-bottom: 0%;
     }
     .logo {
+        padding-top: 5%;
         max-width: 15%;
         padding-left: 42%;
+        height: 50px;
     }
     /* PAGE ABOUT */
     .profile-section {
@@ -2766,6 +2753,7 @@ h2 {
     .form-container {
         padding-top: 10%;
         padding-bottom: 5%;
+        padding-left: 0px;
     }
     .checkbox-container {
         padding-top: 1%;
@@ -2776,7 +2764,7 @@ h2 {
         padding-top: 12%;
     }
     .travel-01 {
-        width: 500px;
+        width: 460px;
     }
     .banner-traveler-02 img {
         width: 550px;
@@ -2803,9 +2791,73 @@ h2 {
         text-align: left;
     }
     .title {
-        padding-top: 25%;
+        padding-top: 5%;
     }
+
+   /* TRAVELERS IMAGE STUDY */
+.study-case-travel-travelers img {
+    padding-top: 630px;
+    width: 520px;
 }
+
+
+
+/* ESCUCHATE IMAGE STUDY */
+.escuchate-02 {
+    width: 500px;
+    padding-top: 31%;
+}
+#study-escuchate {
+    padding-top: 0%;
+    width: 500px;
+}
+#featured-projects-escuchate {
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE STUDY */
+
+.study-case-weshare img {
+    padding-top: 628px;
+    width: 500px;
+}
+
+/* WE SHARE IMAGE */
+#study-case-yep {
+    padding-top: 419px;
+    width: 520px;
+}
+#featured-projects-weshare {
+    padding-top: 2%;
+}
+
+
+/* YEP IMAGE STUDY */
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 110%;
+}
+/* WORLD IMAGE STUDY */
+
+.study-case-world img {
+    padding-top: 624px;
+    width: 500px;
+}
+#study-world-2 {
+    padding-top: 0%;
+}
+.title-world{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#featured-projects-world {
+    padding-top: 2%;
+}
+}
+
 
 
 /* Adjustments for desktops and large devices */
@@ -2838,17 +2890,18 @@ h2 {
     }
     .heroText {
         margin: -11px;
-        padding-top: 25%;
-        margin-left: 100px;
+        padding-top: 15%;
+        margin-left: 281px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         font-size: 50px;
         font-weight: bolder;
         text-align: left;
-        /* corrected the empty value */
         display: flex;
         flex-direction: column;
         color: white;
     }
+    
+    
     .hero-buttons {
         padding-left: 0%;
         /* corrected the two zeros value */
@@ -3121,11 +3174,11 @@ h2 {
     }
     /* PAGE TRAVELERS */
     .banner-traveler img {
-        width: 1000px;
+        width: 835px;
         padding-top: 5%;
     }
     .travel-01 {
-        width: 800px;
+        width: 877px;
     }
     .banner-traveler-02 img {
         width: 1000px;
@@ -3139,11 +3192,13 @@ h2 {
     .project-container {
         flex-direction: column;
         padding: 0 88px;
-        padding-top: 15%;
+        padding-top: 0%;
     }
     .proto {
+        padding-left: 50px;
         position: relative;
-        width: 100%;
+        left: 200px;
+        width: 50%;
         /* you need to define a height here, you can set it to whatever you want, for example: */
         height: 500px;
     }
@@ -3153,96 +3208,728 @@ h2 {
         text-align: left;
     }
     .title {
-        padding-top: 55%;
+        padding-top: 0%;
     }
-    /* Esperience section  */
-    /* Tablet Specific Styles */
-    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-        /* ... */
-        /* Your tablet specific styles go here */
+        
+      /* TRAVELERS IMAGE STUDY */
+.study-case-travel-travelers img {
+    padding-top: 625px;
+    width: 914px;
+}
+
+#featured-projects-travel {
+    text-align: center;
+    color: white;
+    padding-top: 0%;
+}
+
+/* ESCUCHATE IMAGE STUDY */
+.escuchate-02 {
+    width: 877px;
+    padding-top: 18%;
+}
+#study-escuchate {
+    padding-top: 0%;
+    width: 850px;
+}
+#featured-projects-escuchate {
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE STUDY */
+
+.study-case-weshare img {
+    padding-top: 628px;
+    width: 857px;
+}
+
+/* WE SHARE IMAGE */
+#study-case-yep {
+    padding-top: 212px;
+    width: 889px;
+}
+#featured-projects-weshare {
+    padding-top: 2%;
+}
+
+
+/* YEP IMAGE STUDY */
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 50%;
+}
+/* WORLD IMAGE STUDY */
+
+.study-case-world img {
+    padding-top: 624px;
+    width: 934px;
+}
+#study-world-2 {
+    padding-top: 0%;
+}
+.title-world{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#featured-projects-world {
+    padding-top: 2%;
+}
+.about-img-about {
+    max-width: 764px;
+    height: auto;
+}
+.about-text-about {
+    padding-top: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+}
+
+
+
+/* DESKTOP */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    /* ... Other tablet styles ... */
+    .container {
+        height: 740px;
+        background-size: 150%;
+        background-position: 40%;
     }
-    /* Mobile Specific Styles */
-    @media only screen and (max-width: 600px) {
-        /* ... */
-        /* Your mobile specific styles go here */
+    .behance-img {
+        padding-top: 0%;
+        padding-left: 5%;
+        max-width: 8%;
+        padding-bottom: %;
     }
-    /* PAGE ESCUCHATE */
-    .featured-projects-escuchate {
-        padding-top: 95%;
+    .linkedin-img {
+        padding-top: 0%;
+        padding-left: 25%;
+        max-width: 8%;
+        padding-bottom: %;
     }
-    .project-container-escuchate {
-        padding-top: 10%;
-        padding-left: 15%;
+    .logo {
+        height: 60px;
+        padding-left: 44%;
     }
-    .title {
-        padding-top: 180%;
+    .heroText {
+        margin: -11px;
+        padding-top: 15%;
+        margin-left: 449px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        color: white;
     }
-    .process-cards {
+    
+    
+    .hero-buttons {
+        padding-left: 11%;
+        /* corrected the two zeros value */
+        width: 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+    }
+    .button1 {
+        margin-left: 0%;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        margin-bottom: 20px;
+    }
+    .button2 {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        /* corrected the 'none' value */
+        border-style: outset;
+        border-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
+    .button1,
+    .button2 {
+        white-space: nowrap;
+        min-width: 220px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
     }
-    /* PAGE TRAVEL */
-    .title-travel {
-        padding-top: 45%;
-        text-align: center;
-        color: white;
-        font-size: 40px;
+    .hamburger-menu {
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: 18px;
+        margin: 10px;
+        position: fixed;
+        top: 30px;
+        right: 950px;
+        z-index: 1001;
     }
-    /* PAGE YEP */
-    .title-yep {
-        padding-top: 70%;
-        text-align: center;
-        color: white;
-        font-size: 40px;
+    .hamburger-menu div {
+        width: 100%;
+        height: 3px;
+        background-color: #6a37fc;
+        margin: 5px 0;
+        transition: all 0.3s;
+        border-radius: 12px;
     }
-    /* PAGE WE SHARE */
-    .title-weshare {
-        padding-top: 210%;
-        text-align: center;
-        color: white;
-        font-size: 40px;
+    .change .hamburger-menu div {}
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 5px);
     }
-    .study-case-travel img {
-        max-width: 800px;
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    #navLinks {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(50px);
+        left: -100%;
+        transition: all 0.5s ease;
+        top: 0;
+        z-index: 999;
+    }
+    #navLinks ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
         align-items: center;
     }
-    /* PAGE WE SHARE */
-    .title-travelers {
-        padding-top: 330%;
-        text-align: center;
-        color: white;
-        font-size: 40px;
+    #navLinks a {
+        text-decoration: none;
+        color: rgb(88, 88, 88);
+        font-size: 2rem;
+        transition: color 0.2s;
     }
-}
-
-
-/* ABOUT ME SECTION  */
-
-@media (min-width: 481px) {
-    /* Tablet - Portrait styles */
+    #navLinks a:hover {
+        color: #6a37fc;
+    }
+    .show {
+        left: 0;
+    }
+    #experience {
+        padding: 10px;
+    }
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .company-logos a {
+        display: flex;
+        margin: 5px;
+    }
+    .company-logos img {
+        max-width: 278px;
+        height: auto;
+    }
+    /* About Me Section */
     #about-me {
-        flex-direction: column
-        /* Switching to horizontal layout for larger screens */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 14px;
+        padding: 52px;
+        gap: 0px;
     }
-    .about-me-text {
-        width: 60%;
-        /* Assigning specific widths for larger screen, adjust as needed */
+    #about-me h2 {
+        font-size: 18px;
     }
+    #about-me .skills {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .about-me-text,
     .about-me-image {
-        width: 40%;
-        /* Assigning specific widths for larger screen, adjust as needed */
+        width: 100%;
+    }
+    .about-me-image img {
+        max-width: 480px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    #about-me-home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        color: white;
+    }
+    .about-me-text-home {
+        align-items: center;
+        padding-left: 2%;
+        width: 100%;}
+
+    .purple {
+        width: 200%;
+    }
+    /* ... */
+    /* Testimonials */
+    .reviews-clients {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 765px;
+    }
+    .title-reviews h2,
+    .title-reviews h3 {
+        margin-bottom: 20px;
+        padding-left: 0%;
+        font-size: 30px;
+    }
+    .title-reviews h3 {
+        font-size: 20px;
+    }
+    .testimonial-container-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .testimonial,
+    .testimonial-name,
+    .testimonial-role,
+    .testimonial-text {
+        padding: 5px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .testimonial-role,
+    .testimonial-name {
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+    }
+    .stars {
+        padding-left: 0%;
     }
     .testimonial-text {
-        padding-left: 5%;
-        /* Adjusting padding for larger screens */
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 50%;
+        margin-right: 50%;
+        font-size: 20px;
+    }
+    .testimonial-image {
+        width: 228px;
+        height: 261px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        padding-left: 2%;
+    }
+
+   
+    /* ... other styles ... */
+    /* Testimonial Individual Adjustments (if needed) */
+    .testimonial-2 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-1 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-3 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-4 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-name {
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+    .testimonial-role {
+        padding-left: 10%;
+    }
+    /* PAGE ABOUT */
+    .profile-section {
+        flex-direction: column-reverse
+    }
+    .form-container {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .checkbox-container {
+        padding-top: 1%;
+    }
+    /* PAGE TRAVELERS */
+    .banner-traveler img {
+        width: 1349px;
+        padding-top: 5%;
+    }
+    .travel-01 {
+        width: 877px;
+    }
+    .banner-traveler-02 img {
+        width: 1379px;
+    }
+    .study-case-travel {
+        width: 150px;
+    }
+    .study-case-travel img {
+        width: 950px;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 0 332px;
+        padding-top: 0%;
+    }
+    .proto {
+        padding-left: 50px;
+        position: relative;
+        left: 400px;
+        width: 50%;
+        /* you need to define a height here, you can set it to whatever you want, for example: */
+        height: 500px;
+    }
+    .project-overview p {
         padding-right: 5%;
+        margin-left: 5%;
+        text-align: left;
     }
-    /* ... add any other styles specific to the tablet portrait layout ... */
-    .about-text {
-        flex-direction: column
+    .title {
+        padding-top: 0%;
     }
-    .about-img {
-        max-width: 500px;
+        
+      /* TRAVELERS IMAGE STUDY */
+      .study-case-travel-travelers img {
+        padding-top: 625px;
+        width: 1425px;
     }
+
+#featured-projects-travel {
+    text-align: center;
+    color: white;
+    padding-top: 0%;
+}
+
+/* ESCUCHATE IMAGE STUDY */
+.escuchate-02 {
+    width: 1362px;
+    padding-top: 18%;
+}
+#study-escuchate {
+    padding-top: 0%;
+    width: 1343px;
+}
+#featured-projects-escuchate {
+    padding-top: 0%;
+}
+.title-escuchate {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE STUDY */
+
+.study-case-weshare img {
+    padding-top: 628px;
+    width: 1326px;
+}
+.title-weshare {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE */
+#study-case-yep {
+    padding-top: 212px;
+    width: 1340px;
+}
+#featured-projects-weshare {
+    padding-top: 2%;
 }
 
 
+/* YEP IMAGE STUDY */
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 30%;
+}
+/* WORLD IMAGE STUDY */
+
+.study-case-world img {
+    padding-top: 624px;
+    width: 1383px;
+}
+#study-world-2 {
+    padding-top: 0%;
+}
+.title-world{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#featured-projects-world {
+    padding-top: 2%;
+}
+.about-img-about {
+    max-width: 1008px;
+    height: auto;
+    padding-left: 12%;
+}
+.about-text-about {
+    padding-top: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+}
+
+@media (min-width: 1440px) and (max-width: 3000px) {
+    .linkedin-img {
+        padding-left: 509px;
+        width: 50px;
+        height: auto;
+    }
+ 
+
+    .about-img-about {
+        max-width: 900px;
+        height: auto;
+        padding-top: 10%;
+        padding-left: 0%;
+    }
+    .text-container-about {
+        text-align: left;
+        padding-left: 2%;
+    }
+    .text-container-about p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .reviews-clients {
+        width: 100%;
+        height: 738px;
+        margin: 0 auto;
+        background-image: linear-gradient(180deg, #6a37fc, #270d46, rgb(31, 31, 31));
+    }
+    .footer-right {
+        align-items: flex-start;
+        margin-left: 1214px;
+    }
+    .hamburger-menu {
+        cursor: pointer;
+        display: block;
+        width: 60px;
+        height: 22px;
+        margin: 41px;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .heroText {
+        margin: 0px;
+        margin-left: 882px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 70px;
+        font-weight: bolder;
+        text-align: ;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    .container {
+        width: 100%;
+        height: 704px;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url(../img/heroImage.png);
+        border: 59px;
+        padding-top: 15%;
+    }
+    .company-logos img {
+        width: 203px;
+        transition: transform .3s ease;
+    }
+    .title {
+        size: 100px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 0%;
+    }
+    .proto {
+        padding-left: 50px;
+        position: relative;
+        left: 480px;
+        width: 50%;
+        /* you need to define a height here, you can set it to whatever you want, for example: */
+        height: 500px;
+    }
+
+
+
+
+        
+      /* TRAVELERS IMAGE STUDY */
+      .study-case-travel-travelers img {
+        padding-top: 625px;
+        width: 1900px;
+    }
+
+#featured-projects-travel {
+    text-align: center;
+    color: white;
+    padding-top: 0%;
+}
+
+/* ESCUCHATE IMAGE STUDY */
+.escuchate-02 {
+    width: 1900px;
+    padding-top: 18%;
+}
+#study-escuchate {
+    padding-top: 0%;
+    width: 1900px;
+}
+#featured-projects-escuchate {
+    padding-top: 0%;
+}
+.title-escuchate {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE STUDY */
+
+.study-case-travel-travelers img {
+    padding-top: 647px;
+    width: 1900px;
+}
+.study-case-weshare img {
+    padding-top: 647px;
+    width: 1900px;
+}
+.title-weshare {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE */
+#study-case-yep {
+    padding-top: -141px;
+    width: 1721px;
+}
+#featured-projects-weshare {
+    padding-top: 0%;
+}
+
+
+/* YEP IMAGE STUDY */
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 30%;
+}
+/* WORLD IMAGE STUDY */
+
+.study-case-world img {
+    padding-top: 1050px;
+    width: 1900px;
+}
+#study-world-2 {
+    padding-top: 0%;
+}
+.title-world{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#featured-projects-world {
+    padding-top: 2%;
+}
+.about-img-about {
+    max-width: 1008px;
+    height: auto;
+    padding-left: 12%;
+}
+.about-text-about {
+    padding-top: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+}
