@@ -2052,15 +2052,36 @@ body {
     width: 150px;
 }
 .study-case-travel img {
-    padding-top: 420px;
+    padding-top: 0px;
     width: 400px;
 }
+.study-case-world img {
+    padding-top: 624px;
+    width: 450px;
+}
+#featured-projects-world {
+    padding-top: 4%;
+}
+.study-case-weshare img {
+    padding-top: 628px;
+    width: 400px;
+}
+
 .study-case-travel-travelers img {
     padding-top: 630px;
     width: 400px;
 }
+#study-case-yep{
+    padding-top: 419px;
+    width: 450px;
+}
+}
 #featured-projects-travel {
     padding-top: 0%;
+}
+#study-escuchate {
+    padding-top: 0%;
+
 }
 
 
@@ -2072,7 +2093,8 @@ body {
     padding-top: 0%;
 }
 .escuchate-02{
-    padding-top: 0%;
+    width: 420px;
+    padding-top: 31%;
 }
 .proto {
     position: relative;
@@ -2112,25 +2134,44 @@ body {
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 330%;
+    padding-top: 60%;
+}
+.title-travelers {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 60%;
+}
+.title-world {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
 }
 .title-weshare {
     size: 100px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 150%;
+    padding-top: 0%;
 }
 .title-yep {
     size: 100px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 170%;
+    padding-top: 130%;
 }
 
+#study-escuchate{
+    padding-top: 0%;
+    width: 420px;
+
+}
 #featured-projects-escuchate {
-    padding-top: 460%;
+    padding-top: 2%;
 }
 
 /* about me  */
@@ -2210,6 +2251,14 @@ h2 {
     font-family: sans-serif;
 }
 
+#study-world-2{
+    padding-top: 0%;
+}
+
+
+#featured-projects-weshare {
+    padding-top: 4%;
+}
 /* 481 px MOBILE DEVICE */
 
 @media (min-width: 481px) and (max-width: 768px) {
