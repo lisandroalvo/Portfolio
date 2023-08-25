@@ -1579,8 +1579,8 @@ body {
         z-index: 1001;
         /* slightly higher than navbar for overlay */
     }
-    .logo{
-        height: 44px;
+    .logo {
+        height: 36px;
         width: auto;
         padding-left: 45%;
         padding-top: 35px;
@@ -1601,11 +1601,11 @@ body {
     padding-left: -85px;
     cursor: none;
     display: block;
-    width: 3px;
+    width: -28px;
     height: -31px;
-    margin: 5px;
-    top: 36px;
-    right: 352px;
+    margin: -1px;
+    top: 38px;
+    right: 388px;
     z-index: 1001;
 }
     .hamburger-menu div {
@@ -2014,13 +2014,13 @@ body {
     padding-top: 0%;
     padding-left: 5%;
     max-width: 8%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
 }
 .linkedin-img {
     padding-top: 0%;
     padding-left: 15%;
     max-width: 8%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
 }
 .logo {
     max-width: 15%;
