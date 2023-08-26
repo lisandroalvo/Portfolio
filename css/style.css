@@ -3743,7 +3743,1416 @@ h2 {
 }
 }
 
+
+
+/* 1300px */
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    /* ... Other tablet styles ... */
+    .container {
+        height: 740px;
+        background-size: 150%;
+        background-position: 40%;
+    }
+    .behance-img {
+        padding-top: 0%;
+        padding-left: 5%;
+        max-width: 8%;
+        padding-bottom: %;
+    }
+    .linkedin-img {
+        padding-top: 0%;
+        padding-left: 25%;
+        max-width: 8%;
+        padding-bottom: %;
+    }
+    .logo {
+        height: 60px;
+        padding-left: 44%;
+    }
+    .heroText {
+        margin: -11px;
+        padding-top: 15%;
+        margin-left: 281px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    
+    
+    .hero-buttons {
+        padding-left: 0%;
+        /* corrected the two zeros value */
+        width: 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+    }
+    .button1 {
+        margin-left: 0%;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        margin-bottom: 20px;
+    }
+    .button2 {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        /* corrected the 'none' value */
+        border-style: outset;
+        border-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
+    .button1,
+    .button2 {
+        white-space: nowrap;
+        min-width: 220px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+    .hamburger-menu {
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: 18px;
+        margin: 10px;
+        position: fixed;
+        top: 30px;
+        right: 708px;
+        z-index: 1001;
+    }
+    .hamburger-menu div {
+        width: 100%;
+        height: 3px;
+        background-color: #6a37fc;
+        margin: 5px 0;
+        transition: all 0.3s;
+        border-radius: 12px;
+    }
+    .change .hamburger-menu div {}
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 5px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    #navLinks {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(50px);
+        left: -100%;
+        transition: all 0.5s ease;
+        top: 0;
+        z-index: 999;
+    }
+    #navLinks ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #navLinks a {
+        text-decoration: none;
+        color: rgb(88, 88, 88);
+        font-size: 2rem;
+        transition: color 0.2s;
+    }
+    #navLinks a:hover {
+        color: #6a37fc;
+    }
+    .show {
+        left: 0;
+    }
+    #experience {
+        padding: 10px;
+    }
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .company-logos a {
+        display: flex;
+        margin: 5px;
+    }
+    .company-logos img {
+        max-width: 100px;
+        height: auto;
+    }
+    /* About Me Section */
+    #about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 14px;
+        padding: 52px;
+        gap: 0px;
+    }
+    #about-me h2 {
+        font-size: 18px;
+    }
+    #about-me .skills {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .about-me-text,
+    .about-me-image {
+        width: 100%;
+    }
+    .about-me-image img {
+        max-width: 480px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    #about-me-home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        /* This will put the image first and then the text below */
+        /* This centers the items */
+        color: white;
+    }
+    .about-me-text-home {
+        align-items: center;
+        padding-left: 2%;
+        width: 100%;
+    }
+    .purple {
+        width: 200%;
+    }
+    /* ... */
+    /* Testimonials */
+    .reviews-clients {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 765px;
+    }
+    .title-reviews h2,
+    .title-reviews h3 {
+        margin-bottom: 20px;
+        padding-left: 0%;
+        font-size: 30px;
+    }
+    .title-reviews h3 {
+        font-size: 20px;
+    }
+    .testimonial-container-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .testimonial,
+    .testimonial-name,
+    .testimonial-role,
+    .testimonial-text {
+        padding: 5px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .testimonial-role,
+    .testimonial-name {
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+    }
+    .stars {
+        padding-left: 0%;
+    }
+    .testimonial-text {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 50%;
+        margin-right: 50%;
+        font-size: 20px;
+    }
+    .testimonial-image {
+        width: 100px;
+        height: 180px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        padding-left: 2%;
+    }
+    /* ... other styles ... */
+    /* Testimonial Individual Adjustments (if needed) */
+    .testimonial-2 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-1 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-3 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-4 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-name {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-role {
+        padding-left: 10%;
+    }
+    /* PAGE ABOUT */
+    .profile-section {
+        flex-direction: column-reverse
+    }
+    .form-container {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .checkbox-container {
+        padding-top: 1%;
+    }
+    /* PAGE TRAVELERS */
+    .banner-traveler img {
+        width: 835px;
+        padding-top: 5%;
+    }
+    .travel-01 {
+        width: 877px;
+    }
+    .banner-traveler-02 img {
+        width: 1000px;
+    }
+    .study-case-travel {
+        width: 150px;
+    }
+    .study-case-travel img {
+        width: 950px;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 0 88px;
+        padding-top: 0%;
+    }
+    .proto {
+        padding-left: 50px;
+        position: relative;
+        left: 200px;
+        width: 50%;
+        /* you need to define a height here, you can set it to whatever you want, for example: */
+        height: 500px;
+    }
+    .project-overview p {
+        padding-right: 5%;
+        margin-left: 5%;
+        text-align: left;
+    }
+    .title {
+        padding-top: 0%;
+    }
+        
+      /* TRAVELERS IMAGE STUDY */
+.study-case-travel-travelers img {
+    padding-top: 625px;
+    width: 914px;
+}
+
+#featured-projects-travel {
+    text-align: center;
+    color: white;
+    padding-top: 0%;
+}
+
+/* ESCUCHATE IMAGE STUDY */
+.escuchate-02 {
+    width: 877px;
+    padding-top: 18%;
+}
+#study-escuchate {
+    padding-top: 0%;
+    width: 850px;
+}
+#featured-projects-escuchate {
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE STUDY */
+
+.study-case-weshare img {
+    padding-top: 628px;
+    width: 857px;
+}
+
+/* WE SHARE IMAGE */
+#study-case-yep {
+    padding-top: 212px;
+    width: 889px;
+}
+#featured-projects-weshare {
+    padding-top: 2%;
+}
+
+
+/* YEP IMAGE STUDY */
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 50%;
+}
+/* WORLD IMAGE STUDY */
+
+.study-case-world img {
+    padding-top: 624px;
+    width: 934px;
+}
+#study-world-2 {
+    padding-top: 0%;
+}
+.title-world{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#featured-projects-world {
+    padding-top: 2%;
+}
+.about-img-about {
+    max-width: 764px;
+    height: auto;
+}
+.about-text-about {
+    padding-top: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+.footer-right {
+    align-items: flex-start;
+    margin-left: -19px;
+}
+
+.foot-h3 {
+    padding-left: 0px;
+    font-size: 20px;
+}
+}
+
+
+
+/* DESKTOP */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    /* ... Other tablet styles ... */
+    .container {
+        height: 740px;
+        background-size: 150%;
+        background-position: 40%;
+    }
+    .behance-img {
+        padding-top: 0%;
+        padding-left: 5%;
+        max-width: 8%;
+        padding-bottom: %;
+    }
+    .linkedin-img {
+        padding-top: 0%;
+        padding-left: 25%;
+        max-width: 8%;
+        padding-bottom: %;
+    }
+    .logo {
+        height: 60px;
+        padding-left: 44%;
+    }
+    .heroText {
+        margin: -11px;
+        padding-top: 15%;
+        margin-left: 449px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .footer-left {
+        padding-left: 0%;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 50px;
+        padding-right: 20%;
+    }
+    .foot-h3 {
+        padding-left: 0px;
+        font-size: 20px;
+    }
+
+
+    .footer-right {
+        align-items: flex-start;
+        margin-left: 1014px;
+    }
+    
+    .footer-center ul, .footer-right ul {
+        list-style-type: none;
+        padding-right: 100px;
+    }
+    .hero-buttons {
+        padding-left: 11%;
+        /* corrected the two zeros value */
+        width: 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+    }
+    .button1 {
+        margin-left: 0%;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        margin-bottom: 20px;
+    }
+    .button2 {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        /* corrected the 'none' value */
+        border-style: outset;
+        border-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
+    .button1,
+    .button2 {
+        white-space: nowrap;
+        min-width: 220px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+    .hamburger-menu {
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: 18px;
+        margin: 10px;
+        position: fixed;
+        top: 30px;
+        right: 938px;
+        z-index: 1001;
+    }
+    .hamburger-menu div {
+        width: 100%;
+        height: 3px;
+        background-color: #6a37fc;
+        margin: 5px 0;
+        transition: all 0.3s;
+        border-radius: 12px;
+    }
+    .change .hamburger-menu div {}
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 5px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    #navLinks {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(50px);
+        left: -100%;
+        transition: all 0.5s ease;
+        top: 0;
+        z-index: 999;
+    }
+    #navLinks ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #navLinks a {
+        text-decoration: none;
+        color: rgb(88, 88, 88);
+        font-size: 2rem;
+        transition: color 0.2s;
+    }
+    #navLinks a:hover {
+        color: #6a37fc;
+    }
+    .show {
+        left: 0;
+    }
+    #experience {
+        padding: 10px;
+    }
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .company-logos a {
+        display: flex;
+        margin: 5px;
+    }
+    .company-logos img {
+        max-width: 278px;
+        height: auto;
+    }
+    /* About Me Section */
+    #about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 14px;
+        padding: 52px;
+        gap: 0px;
+    }
+    #about-me h2 {
+        font-size: 18px;
+    }
+    #about-me .skills {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .about-me-text,
+    .about-me-image {
+        width: 100%;
+    }
+    .about-me-image img {
+        max-width: 480px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    #about-me-home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        color: white;
+    }
+    .about-me-text-home {
+        align-items: center;
+        padding-left: 2%;
+        width: 100%;}
+
+    .purple {
+        width: 200%;
+    }
+    /* ... */
+    /* Testimonials */
+    .reviews-clients {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 765px;
+    }
+    .title-reviews h2,
+    .title-reviews h3 {
+        margin-bottom: 20px;
+        padding-left: 0%;
+        font-size: 30px;
+    }
+    .title-reviews h3 {
+        font-size: 20px;
+    }
+    .testimonial-container-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .testimonial,
+    .testimonial-name,
+    .testimonial-role,
+    .testimonial-text {
+        padding: 5px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .testimonial-role,
+    .testimonial-name {
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+    }
+    .stars {
+        padding-left: 0%;
+    }
+    .testimonial-text {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 50%;
+        margin-right: 50%;
+        font-size: 20px;
+    }
+    .testimonial-image {
+        width: 228px;
+        height: 261px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        padding-left: 2%;
+    }
+
+   
+    /* ... other styles ... */
+    /* Testimonial Individual Adjustments (if needed) */
+    .testimonial-2 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-1 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-3 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-4 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-name {
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+    .testimonial-role {
+        padding-left: 10%;
+    }
+    /* PAGE ABOUT */
+    .profile-section {
+        flex-direction: column-reverse
+    }
+    .form-container {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .checkbox-container {
+        padding-top: 1%;
+    }
+    /* PAGE TRAVELERS */
+    .banner-traveler img {
+        width: 1349px;
+        padding-top: 5%;
+    }
+    .travel-01 {
+        width: 877px;
+    }
+    .banner-traveler-02 img {
+        width: 1379px;
+    }
+    .study-case-travel {
+        width: 150px;
+    }
+    .study-case-travel img {
+        width: 950px;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 0 332px;
+        padding-top: 0%;
+    }
+    .proto {
+        padding-left: 50px;
+        position: relative;
+        left: 400px;
+        width: 50%;
+        /* you need to define a height here, you can set it to whatever you want, for example: */
+        height: 500px;
+    }
+    .project-overview p {
+        padding-right: 5%;
+        margin-left: 5%;
+        text-align: left;
+    }
+    .title {
+        padding-top: 0%;
+    }
+        
+      /* TRAVELERS IMAGE STUDY */
+      .study-case-travel-travelers img {
+        padding-top: 625px;
+        width: 1425px;
+    }
+
+#featured-projects-travel {
+    text-align: center;
+    color: white;
+    padding-top: 0%;
+}
+
+/* ESCUCHATE IMAGE STUDY */
+.escuchate-02 {
+    width: 1362px;
+    padding-top: 18%;
+}
+#study-escuchate {
+    padding-top: 0%;
+    width: 1343px;
+}
+#featured-projects-escuchate {
+    padding-top: 0%;
+}
+.title-escuchate {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE STUDY */
+
+.study-case-weshare img {
+    padding-top: 628px;
+    width: 1326px;
+}
+.title-weshare {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE */
+#study-case-yep {
+    padding-top: 212px;
+    width: 1340px;
+}
+#featured-projects-weshare {
+    padding-top: 2%;
+}
+
+
+/* YEP IMAGE STUDY */
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 30%;
+}
+/* WORLD IMAGE STUDY */
+
+.study-case-world img {
+    padding-top: 624px;
+    width: 1383px;
+}
+#study-world-2 {
+    padding-top: 0%;
+}
+.title-world{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#featured-projects-world {
+    padding-top: 2%;
+}
+.about-img-about {
+    max-width: 1008px;
+    height: auto;
+    padding-left: 12%;
+}
+.about-text-about {
+    padding-top: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+.footer-right {
+    align-items: flex-start;
+    margin-left: -1px;
+}
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    /* ... Other tablet styles ... */
+    .container {
+        height: 740px;
+        background-size: 150%;
+        background-position: 40%;
+    }
+    .behance-img {
+        padding-top: 0%;
+        padding-left: 5%;
+        max-width: 8%;
+        padding-bottom: %;
+    }
+    .linkedin-img {
+        padding-top: 0%;
+        padding-left: 28%;
+        max-width: 8%;
+        padding-bottom: %;
+    }
+    .logo {
+        height: 60px;
+        padding-left: 44%;
+    }
+    .heroText {
+        margin: -11px;
+        padding-top: 15%;
+        margin-left: 449px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .footer-left {
+        padding-left: 0%;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 50px;
+        padding-right: 20%;
+    }
+    .foot-h3 {
+        padding-left: 0px;
+        font-size: 20px;
+    }
+
+
+    .footer-right {
+        align-items: flex-start;
+        margin-left: 1014px;
+    }
+    
+    .footer-center ul, .footer-right ul {
+        list-style-type: none;
+        padding-right: 100px;
+    }
+    .hero-buttons {
+        padding-left: 11%;
+        /* corrected the two zeros value */
+        width: 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+    }
+    .button1 {
+        margin-left: 0%;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        margin-bottom: 20px;
+    }
+    .button2 {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        /* corrected the 'none' value */
+        border-style: outset;
+        border-color: #6a37fc;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
+    .button1,
+    .button2 {
+        white-space: nowrap;
+        min-width: 220px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+    .hamburger-menu {
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: 18px;
+        margin: 10px;
+        position: fixed;
+        top: 30px;
+        right: 1116px;
+        z-index: 1001;
+    }
+    .hamburger-menu div {
+        width: 100%;
+        height: 3px;
+        background-color: #6a37fc;
+        margin: 5px 0;
+        transition: all 0.3s;
+        border-radius: 12px;
+    }
+    .change .hamburger-menu div {}
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 5px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    #navLinks {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(50px);
+        left: -100%;
+        transition: all 0.5s ease;
+        top: 0;
+        z-index: 999;
+    }
+    #navLinks ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #navLinks a {
+        text-decoration: none;
+        color: rgb(88, 88, 88);
+        font-size: 2rem;
+        transition: color 0.2s;
+    }
+    #navLinks a:hover {
+        color: #6a37fc;
+    }
+    .show {
+        left: 0;
+    }
+    #experience {
+        padding: 10px;
+    }
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .company-logos a {
+        display: flex;
+        margin: 5px;
+    }
+    .company-logos img {
+        max-width: 278px;
+        height: auto;
+    }
+    /* About Me Section */
+    #about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 14px;
+        padding: 52px;
+        gap: 0px;
+    }
+    #about-me h2 {
+        font-size: 18px;
+    }
+    #about-me .skills {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .about-me-text,
+    .about-me-image {
+        width: 100%;
+    }
+    .about-me-image img {
+        max-width: 480px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    #about-me-home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        color: white;
+    }
+    .about-me-text-home {
+        align-items: center;
+        padding-left: 2%;
+        width: 100%;}
+
+    .purple {
+        width: 200%;
+    }
+    /* ... */
+    /* Testimonials */
+    .reviews-clients {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 765px;
+    }
+    .title-reviews h2,
+    .title-reviews h3 {
+        margin-bottom: 20px;
+        padding-left: 0%;
+        font-size: 30px;
+    }
+    .title-reviews h3 {
+        font-size: 20px;
+    }
+    .testimonial-container-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .testimonial,
+    .testimonial-name,
+    .testimonial-role,
+    .testimonial-text {
+        padding: 5px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .testimonial-role,
+    .testimonial-name {
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+    }
+    .stars {
+        padding-left: 0%;
+    }
+    .testimonial-text {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 50%;
+        margin-right: 50%;
+        font-size: 20px;
+    }
+    .testimonial-image {
+        width: 228px;
+        height: 261px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        padding-left: 2%;
+    }
+
+   
+    /* ... other styles ... */
+    /* Testimonial Individual Adjustments (if needed) */
+    .testimonial-2 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-1 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-3 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-4 {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .testimonial-name {
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+    .testimonial-role {
+        padding-left: 10%;
+    }
+    /* PAGE ABOUT */
+    .profile-section {
+        flex-direction: column-reverse
+    }
+    .form-container {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .checkbox-container {
+        padding-top: 1%;
+    }
+    /* PAGE TRAVELERS */
+    .banner-traveler img {
+        width: 1349px;
+        padding-top: 5%;
+    }
+    .travel-01 {
+        width: 877px;
+    }
+    .banner-traveler-02 img {
+        width: 1379px;
+    }
+    .study-case-travel {
+        width: 150px;
+    }
+    .study-case-travel img {
+        width: 950px;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 0 332px;
+        padding-top: 0%;
+    }
+    .proto {
+        padding-left: 50px;
+        position: relative;
+        left: 400px;
+        width: 50%;
+        /* you need to define a height here, you can set it to whatever you want, for example: */
+        height: 500px;
+    }
+    .project-overview p {
+        padding-right: 5%;
+        margin-left: 5%;
+        text-align: left;
+    }
+    .title {
+        padding-top: 0%;
+    }
+        
+      /* TRAVELERS IMAGE STUDY */
+      .study-case-travel-travelers img {
+        padding-top: 625px;
+        width: 1425px;
+    }
+
+#featured-projects-travel {
+    text-align: center;
+    color: white;
+    padding-top: 0%;
+}
+
+/* ESCUCHATE IMAGE STUDY */
+.escuchate-02 {
+    width: 1362px;
+    padding-top: 18%;
+}
+#study-escuchate {
+    padding-top: 0%;
+    width: 1343px;
+}
+#featured-projects-escuchate {
+    padding-top: 0%;
+}
+.title-escuchate {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE STUDY */
+
+.study-case-weshare img {
+    padding-top: 628px;
+    width: 1326px;
+}
+.title-weshare {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 0%;
+}
+/* WE SHARE IMAGE */
+#study-case-yep {
+    padding-top: 212px;
+    width: 1340px;
+}
+#featured-projects-weshare {
+    padding-top: 2%;
+}
+
+
+/* YEP IMAGE STUDY */
+.title-yep {
+    size: 100px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 30%;
+}
+/* WORLD IMAGE STUDY */
+
+.study-case-world img {
+    padding-top: 624px;
+    width: 1383px;
+}
+#study-world-2 {
+    padding-top: 0%;
+}
+.title-world{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#featured-projects-world {
+    padding-top: 2%;
+}
+.about-img-about {
+    max-width: 1008px;
+    height: auto;
+    padding-left: 12%;
+}
+.about-text-about {
+    padding-top: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+.footer-right {
+    align-items: flex-start;
+    margin-left: -1px;
+}
+
+}
+
+
 @media (min-width: 1440px) and (max-width: 3000px) {
+
+
+    .footer-right {
+        align-items: flex-start;
+        margin-left: -19px;
+    }
+
+    .foot-h3 {
+        padding-left: 0px;
+        font-size: 20px;
+    }
     .linkedin-img {
         padding-left: 509px;
         width: 50px;
@@ -3772,10 +5181,7 @@ h2 {
         margin: 0 auto;
         background-image: linear-gradient(180deg, #6a37fc, #270d46, rgb(31, 31, 31));
     }
-    .footer-right {
-        align-items: flex-start;
-        margin-left: 1214px;
-    }
+    
     .hamburger-menu {
         cursor: pointer;
         display: block;
